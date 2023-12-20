@@ -20,7 +20,7 @@ def setpage(img):
     background-size: 101%;
     background-position: top left;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     }}
     [data-testid="stHeader"] {{
     background: rgba(0,0,0,0);

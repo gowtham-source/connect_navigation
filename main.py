@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import base64
-import pandas as pd
 from stfunction import st_button, load_css
 
 data = st.experimental_get_query_params()

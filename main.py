@@ -19,7 +19,7 @@ def setpage(img):
     background-image: url("data:image/png;base64,{img}");
     background-size: 101%;
     background-position: top left;
-
+    background-repeat: no-repeat;
     background-attachment: fixed;
     }}
     [data-testid="stHeader"] {{

@@ -49,13 +49,13 @@ if data['df'][0] == 'contact':
         # st.markdown('# ')
         st_button('newsletter', 'mailto:info@visualskill.in',
               'Click here to!', 22)
-        st_button('linkedin', 'https://www.linkedin.com/in/gowtham-m-956363205/',
+        st_button('linkedin', 'https://www.linkedin.com/in/visual-skill-0968082a6',
               'check out our!', 22)
-        st_button('instagram', 'https://www.instagram.com/mystical_boy_25/',
+        st_button('instagram', 'https://www.instagram.com/visualskill79',
               'Follow us on!', 22)
-        st_button('youtube', 'https://www.youtube.com/@Gowtham25',
+        st_button('youtube', 'https://www.youtube.com/@visualskill97',
               'Subscribe to our!', 22)
-        st_button('github', 'https://github.com/gowtham-source',
+        st_button('github', 'https://github.com/visualskill',
               'For projects!', 22)
 elif data['df'][0] == 'policy':
     st.write('Privacy & policy')

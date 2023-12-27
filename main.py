@@ -34,7 +34,37 @@ def setpage(img):
     st.markdown(page_bg, unsafe_allow_html=True)
 
 
-if data['df'][0] == 'contact':
+try:
+    if data['df'][0] == 'contact':
+        img = get_img_as_base64("backvs.png")
+        setpage(img)
+        st.write('')
+        st.write('')
+        st.markdown('</br>',unsafe_allow_html=True)
+        st.markdown('</br>',unsafe_allow_html=True)
+        st.markdown('</br>',unsafe_allow_html=True)
+        st.markdown('</br>',unsafe_allow_html=True)
+        col1, col2 = st.columns([1.7,1])
+        with col2:
+            st.write('#### Contact-Mail id: info@visualskill.in')
+            # st.markdown('# ')
+            st_button('newsletter', 'mailto:info@visualskill.in',
+                'Click here to!', 22)
+            st_button('linkedin', 'https://www.linkedin.com/in/visual-skill-0968082a6',
+                'check out our!', 22)
+            st_button('instagram', 'https://www.instagram.com/visualskill79',
+                'Follow us on!', 22)
+            st_button('youtube', 'https://www.youtube.com/@visualskill97',
+                'Subscribe to our!', 22)
+            st_button('github', 'https://github.com/visualskill',
+                'For projects!', 22)
+    elif data['df'][0] == 'policy':
+        st.write('Privacy & policy')
+    elif data['df'][0] == 'terms':
+        st.write('Terms & Cond.')
+    elif data['df'][0] == 'faq':
+        st.write('Frequently Asked Qeustions')
+except Exception as e:
     img = get_img_as_base64("backvs.png")
     setpage(img)
     st.write('')
@@ -48,18 +78,12 @@ if data['df'][0] == 'contact':
         st.write('#### Contact-Mail id: info@visualskill.in')
         # st.markdown('# ')
         st_button('newsletter', 'mailto:info@visualskill.in',
-              'Click here to!', 22)
+            'Click here to!', 22)
         st_button('linkedin', 'https://www.linkedin.com/in/visual-skill-0968082a6',
-              'check out our!', 22)
+            'check out our!', 22)
         st_button('instagram', 'https://www.instagram.com/visualskill79',
-              'Follow us on!', 22)
+            'Follow us on!', 22)
         st_button('youtube', 'https://www.youtube.com/@visualskill97',
-              'Subscribe to our!', 22)
+            'Subscribe to our!', 22)
         st_button('github', 'https://github.com/visualskill',
-              'For projects!', 22)
-elif data['df'][0] == 'policy':
-    st.write('Privacy & policy')
-elif data['df'][0] == 'terms':
-    st.write('Terms & Cond.')
-elif data['df'][0] == 'faq':
-    st.write('Frequently Asked Qeustions')
+            'For projects!', 22)
